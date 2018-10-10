@@ -139,29 +139,30 @@ fi = (function() {
       return result;
   },
 
-  uniq: function(array, func) {
-    let nuarry = []
-    let obj = {}
-    for (let i = 0; i < array.length; i++){
-      if(obj[array[i]] !== true) {
-        obj[array[i]] = true
-        nuarry.push(array[i])
-      }
-      // if (nuarry.indexOf(array[i])){
-      //   nuarry.push(array[i])
-      //   console.log(nuarry)
-      //   debugger
-      // }
-    }
-    return nuarry
-  },
+  // uniq: function(arr, func) {
+  //   let nuarry = []
+  //   let obj = {}
+  //   for(let i = 0; i < arr.length; i++){
+  //     if(obj[arr[i]] !== true){
+  //       obj[arr[i]] = true
+  //       nuarry.push(arr[i])
+  //     }
+  //   }
+  //   console.log(nuarry)
+  //     // if (nuarry.indexOf(array[i])){
+  //     //   nuarry.push(array[i])
+  //     //   console.log(nuarry)
+  //     //   debugger
+  //     // }
+  //   return nuarry
+  // },
 
   // uniq: function(array, func) {
-    //create new array 
-    //loop over their array
-    //if our array contains the element, skip
-    //if our array does not, add the element
-    //return our array
+  //   create new array 
+  //   loop over their array
+  //   if our array contains the element, skip
+  //   if our array does not, add the element
+  //   return our array
   // },
 
   uniqSorted: function(collection, iteratee) {
