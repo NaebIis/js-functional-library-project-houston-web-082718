@@ -8,7 +8,6 @@ fi = (function() {
         if (collection.length === undefined) {
           let keys = Object.keys(collection)
           for ( i = 0; i < keys.length; i++){
-            key = keys[i]
             func(collection[keys[i]], keys[i], collection)
           }
         }else {
