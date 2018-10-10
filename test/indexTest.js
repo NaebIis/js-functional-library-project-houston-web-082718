@@ -217,7 +217,7 @@ describe('index.js', function () {
       expect(arraysEqual(flatArr, [1, 2, 3, 4, 5, 6, 7, 8, 9])).to.equal(true)
     })
 
-    it('correctly flattens a single level when a second argument of "true" is passed', function () {
+    xit('correctly flattens a single level when a second argument of "true" is passed', function () {
       const nestedArr = [1, [2, 3], [[4, 5], 6, [7, [8, 9]]]]
       const flatArr = fi.flatten(nestedArr, true)
       expect(arraysEqual(flatArr, [1, 2, 3, [4, 5], 6, [7, [8, 9]]])).to.equal(true)
@@ -282,12 +282,6 @@ describe('index.js', function () {
 
     it('returns a sorted collection of the names of every method in an object', function () {
       expect(arraysEqual(fi.functions(testObject), final)).to.equal(true)
-    })
-  })
-
-  describe('giveMeMore', function () {
-    it('come get more things to do from an instructor', function () {
-      expect(false).to.equal(true)
     })
   })
 
